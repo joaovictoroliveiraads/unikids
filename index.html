@@ -3,145 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>UniKids</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/UniKids 01.png">
+    <link rel="stylesheet" href="css/style.css">
 
+    <script defer src="script.js"></script>
+
+    <link rel="icon" href="img/UniKids 01.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/UniKids 01.png" type="image/x-icon">
+    <title>UniKids</title>
 </head>
 <body>
-    <!-- Conteúdo do site será adicionado aqui -->
+
+    <!-- Header -->
     <header>
+        <div class="logo">
+            <!-- Coloque aqui o seu logotipo -->
+            <img src="img/UniKids 02.png" alt="UniKids Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#valores">Nossos Valores</a></li>
-                <li><a href="#programas">Programas Educativos</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#calendario">Calendário</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Página Inicial -->
     <section id="home">
-        <h1>Bem-vindo ao </h1>
-        <img src="img/UniKids 02.png" alt="Bem-vindo ao UniKids">
-        <!-- Outros elementos da Página Inicial aqui -->
+        <!-- Adicione elementos e imagens convidativas aqui -->
+        <h1>Bem-vindo à UniKids</h1>
+    <p>Uma escola onde a aprendizagem é divertida!</p>
+    <div class="quem-somos-container">
+        <h2>Quem Somos</h2>
+        <p class="quem-somos-text">
+          A UniKids é uma escola dedicada ao desenvolvimento educacional e criativo de crianças.
+          Nosso compromisso é proporcionar um ambiente acolhedor e estimulante, onde cada criança
+          pode aprender, explorar e crescer.
+        </p>
+      </div>
+    <img src="img/pexels-yan-krukau-8612983.jpg" alt="Imagem 1">
+    <img src="img/pexels-arthur-krijgsman-4019754.jpg" alt="Imagem 2">
     </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Um pouco sobre a UniKids e nossa missão...</p>
-    </section>
-
-    <section id="valores">
-        <h2>Nossos Valores</h2>
-        <ul>
-            <li>Amor</li>
-            <li>Respeito</li>
-            <li>Aprendizado Divertido</li>
-            <!-- Adicione mais valores conforme necessário -->
-        </ul>
-    </section>
-
-    <section id="programas">
-        <h2>Programas Educativos</h2>
-        <p>Explore nossos programas educativos incríveis...</p>
-    </section>
-
-    <section id="noticias">
-        <h2>Notícias</h2>
-        <!-- Adicione notícias conforme necessário -->
-        <article>
-            <h3>Encontro entre professores e alunos</h3>
-            <p>Descrição da notícia...</p>
-            <a href="#noticia-detalhes">Leia mais...</a>
-        </article>
-
-        <article>
-            <h3>Dia das Mães na UniKids</h3>
-            <p>Descrição da notícia...</p>
-            <a href="#noticia-detalhes">Leia mais...</a>
-        </article>
-
-        <article>
-            <h3>Dia do Folclore: Celebrando a diversidade cultural</h3>
-            <p>Descrição da notícia...</p>
-        <a href="#noticia-detalhes">Leia mais...</a>
-
-            <article>
-        <h3>Encontro entre professores e alunos</h3>
-        <p>Descrição completa da notícia...</p>
-    </article>
-
-    </section>
-
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <!-- Adicione imagens da galeria conforme necessário -->
-        <div class="imagem-galeria">
-            <img src="caminho-para-imagem-1.jpg" alt="Descrição da imagem 1">
-        </div>
-        <div class="imagem-galeria">
-            <img src="caminho-para-imagem-2.jpg" alt="Descrição da imagem 2">
-        </div>
-        <div class="imagem-galeria">
-            <img src="caminho-para-imagem-3.jpg" alt="Descrição da imagem 3">
-        </div>
-    </section>
-
-    <section id="calendario">
-        <h2>Calendário Escolar</h2>
-        <!-- Adicione um calendário ou eventos -->
-        <div class="evento-calendario">
-            <p>Data: 10 de Março</p>
-            <p>Evento: Dia da Leitura</p>
-        </div>
-        <div class="evento-calendario">
-            <p>Data: 25 de Maio</p>
-            <p>Evento: Mostra Cultural</p>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form id="contact-form" onsubmit="return validarFormulario()">
-            <div class="campo-formulario">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-            </div>
-    
-            <div class="campo-formulario">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone">
-            </div>
-    
-            <div class="campo-formulario">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
-            </div>
-    
-            <div class="campo-formulario">
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto">
-            </div>
-    
-            <div class="campo-formulario">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem"></textarea>
-            </div>
-    
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    
-
-    <section id="noticia-detalhes">
-        <h2>Detalhes da Notícia</h2>
-        <p>Conteúdo completo da notícia vai aqui.</p>
-    </section>
-
+    <!-- Rodapé -->
     <footer>
         <button id="devs-button" onclick="toggleDevs()">Mostrar/Esconder Devs</button>
 
@@ -151,22 +55,6 @@
             <!-- Adicione mais nomes conforme necessário -->
         </div>
     </footer>
-
-    <script>
-        function toggleDevs() {
-            var devsList = document.getElementById('devs-list');
-    var button = document.getElementById('devs-button');
-
-    if (devsList.style.display === 'none' || devsList.style.display === '') {
-        devsList.style.display = 'block';
-        button.innerText = 'Esconder Devs';
-    } else {
-        devsList.style.display = 'none';
-        button.innerText = 'Mostrar Devs';
-    }    
-        }
-    </script>
-    
 
 </body>
 </html>

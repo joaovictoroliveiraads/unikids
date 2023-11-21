@@ -1,0 +1,186 @@
+/* Reset de Estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cores do Design System */
+:root {
+    --cor-rosa: #ff5b5b;
+    --cor-azul: #1f2a44;
+    --cor-laranja: #ffaa57;
+}
+
+/* Estilos Gerais */
+body {
+    background-image: url('img\background.jpg'); /* Substitua 'nome-da-imagem.jpg' pelo nome do seu arquivo de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    background-color: var(--cor-laranja);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-azul);
+    margin: 0 1rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--cor-laranja);
+    text-align: center;
+    padding: 1rem;
+}
+
+#devsList {
+    display: none;
+}
+
+/* Adicione mais estilos conforme necessário */
+
+
+/* Dentro do bloco CSS existente */
+.logo {
+    max-width: 150px; /* ajuste conforme necessário */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#home {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#noticias article {
+    background-color: #fff; /* Fundo branco para os cards */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#noticias h2 {
+    color: var(--cor-azul);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#noticias p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#noticias img {
+    max-width: 100%; 
+    height: auto
+}
+
+#noticias img,
+#galeria img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#galeria img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Estilizando o botão Devs no rodapé */
+#devs-Button {
+    background-color: var(--cor-azul);
+    color: var(--cor-laranja);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#devs-List {
+    background-color: var(--cor-azul);
+    color: var(--cor-laranja);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* Estilos adicionais para o formulário de contato */
+#contato form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contato form div {
+    margin-bottom: 1.5rem;
+}
+
+#contato form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contato form button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: var(--cor-laranja);
+    color: var(--cor-azul);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Adapte conforme necessário */
